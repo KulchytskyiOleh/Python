@@ -3,7 +3,7 @@ lab = 'Лабораторна №1'
 print (cours, lab, sep = ', ')
 
 name = 'Oleg Kulchytskyi'
-zalikov = '№ 2348'
+zalikov = '№9'
 print ( name + ' ' , zalikov, sep = ', ')
 
 vukl = 'Ivan Savka '
