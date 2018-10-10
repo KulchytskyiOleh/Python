@@ -1,2 +1,1 @@
-# labu_python
-my labs
+# Python_labu
