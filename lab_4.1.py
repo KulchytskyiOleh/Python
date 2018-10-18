@@ -4,16 +4,15 @@
 print ('Створення прикладних програм на мові Python, Лабораторна #4.1')
 print ('Кульчицький Олег, №10')
 eps = 10E-4
-n = 1
 a = 1 / 3
-suma = a
-while a > eps:
-	n +=  1 
+suma = 0
+n = 1
+while n < 3: 
 	c = 1
-	z = 1
 	for x in range(1, n+1):
 		c *= x
-		z *= 3 * x**x
+	z = 3 * n**n
 	a = c / z
 	suma += a
+	n +=  1
 print('При n = {}, a[n] = {} < {} ,і сума всіх елементів буде рівна s = {}'.format(n,a,eps,suma))
