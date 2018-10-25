@@ -11,9 +11,7 @@ def show_y(**y):
   print()
 
 def f_sum(*x,**y):
-  a = []
-  b = []
-  suma = 0
+  a = []; b = []; suma = 0
   for n in x:
     a.append(n)
   for m in y:
