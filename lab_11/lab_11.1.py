@@ -1,9 +1,8 @@
 #Описати клас-ітератор, який повертає слова рядка(слова розділяються одним або декількома пропусками) у оберненому порядку слідування
-
 class Reverse:
     def __init__(self, data):
-        self._data = data           
-        self._index = len(data) 
+        self._data = data.split()           
+        self._index = len(self._data)
     def __iter__(self):       
         return self
     def __str__(self):
@@ -13,7 +12,8 @@ class Reverse:
             raise StopIteration    
         self._index = self._index - 1
         return self._data[self._index]
-data = Reverse(['Сьогодні','був','','сонячний','','','день','у','','','','нашому','','місті'])
+text = 'Описати клас-ітератор, який повертає слова  рядка (слова розділяються одним або декількома пропусками) у оберненому порядку слідування'
+data = Reverse(text)
 print(data)
 for x in data:
-    print(x)
+    print(x,end=' ')
